@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v2u-qP-zhG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="ZsL-ea-sad">
+            <objects>
+                <viewController storyboardIdentifier="loginView" id="2UL-hj-Wrh" customClass="LoginViewController" customModule="Splits" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CFg-e2-fDZ" customClass="AnimatableView" customModule="IBAnimatable">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Splits logo" translatesAutoresizingMaskIntoConstraints="NO" id="GMq-Nu-Qcg">
+                                <rect key="frame" x="158" y="420.5" width="98" height="55"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d8i-Lt-vcD" customClass="AnimatableButton" customModule="IBAnimatable">
+                                <rect key="frame" x="100.5" y="750" width="213" height="61"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="Nqb-2k-oRr"/>
+                                    <constraint firstAttribute="width" constant="213" id="dGI-ej-ZoR"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Login or Register">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="Avenir-Black"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="2UL-hj-Wrh" eventType="touchUpInside" id="tCm-JO-Mug"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8vg-s5-pet"/>
+                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GMq-Nu-Qcg" firstAttribute="centerX" secondItem="CFg-e2-fDZ" secondAttribute="centerX" id="2Y8-hx-EcS"/>
+                            <constraint firstItem="8vg-s5-pet" firstAttribute="bottom" secondItem="d8i-Lt-vcD" secondAttribute="bottom" constant="51" id="78g-GU-QbZ"/>
+                            <constraint firstItem="d8i-Lt-vcD" firstAttribute="centerX" secondItem="CFg-e2-fDZ" secondAttribute="centerX" id="Nd1-Hu-3d5"/>
+                            <constraint firstItem="GMq-Nu-Qcg" firstAttribute="centerY" secondItem="CFg-e2-fDZ" secondAttribute="centerY" id="QM4-BY-dgp"/>
+                            <constraint firstItem="d8i-Lt-vcD" firstAttribute="centerX" secondItem="CFg-e2-fDZ" secondAttribute="centerX" id="vUC-nt-bC2"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.91184580329999998" green="0.70496505499999995" blue="0.45092719790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.89200109240000003" green="0.50751137729999996" blue="0.058529011909999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="XVf-kM-yck"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XOI-1z-BW7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3568.115942028986" y="92.410714285714278"/>
+        </scene>
+        <!--User Info View Controller-->
+        <scene sceneID="rWf-8d-CUN">
+            <objects>
+                <viewController storyboardIdentifier="userInfoView" id="w97-lj-tAm" customClass="UserInfoViewController" customModule="Splits" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ela-1A-IUh" customClass="AnimatableView" customModule="IBAnimatable">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Splits logo" translatesAutoresizingMaskIntoConstraints="NO" id="hjO-u2-szj">
+                                <rect key="frame" x="158" y="165" width="98" height="55"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S8Y-Q3-40C" customClass="AnimatableButton" customModule="IBAnimatable">
+                                <rect key="frame" x="100.5" y="750" width="213" height="61"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="NVG-8Y-sPQ"/>
+                                    <constraint firstAttribute="width" constant="213" id="QAK-nk-XXE"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Next">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="Avenir-Black"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="w97-lj-tAm" eventType="touchUpInside" id="kxv-Eo-tcz"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="JJB-oL-9Nu">
+                                <rect key="frame" x="57" y="263" width="300" height="188.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p3o-IY-DeS">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="74"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDC-ds-MpV">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Add a username!">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="0.99998801950000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="29" name="Avenir-Black"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n5c-zq-uCt">
+                                                <rect key="frame" x="0.0" y="40" width="300" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="2UF-bA-ZIU"/>
+                                                </constraints>
+                                                <attributedString key="attributedText"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sfD-21-8xa">
+                                        <rect key="frame" x="0.0" y="124" width="300" height="64.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qP3-li-DG0">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="30.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Add a Phone Number!">
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="22" name="Avenir-Black"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="+1 (916) 444-5555" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ekm-JD-VdS">
+                                                <rect key="frame" x="0.0" y="30.5" width="300" height="34"/>
+                                                <attributedString key="attributedText"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ojN-GW-8Ab"/>
+                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="JJB-oL-9Nu" firstAttribute="top" secondItem="hjO-u2-szj" secondAttribute="bottom" constant="43" id="1Jt-DM-DhG"/>
+                            <constraint firstItem="ojN-GW-8Ab" firstAttribute="bottom" secondItem="S8Y-Q3-40C" secondAttribute="bottom" constant="51" id="1v6-1g-RzQ"/>
+                            <constraint firstItem="hjO-u2-szj" firstAttribute="top" secondItem="ojN-GW-8Ab" secondAttribute="top" constant="121" id="Feu-Za-QJ7"/>
+                            <constraint firstItem="hjO-u2-szj" firstAttribute="centerX" secondItem="ela-1A-IUh" secondAttribute="centerX" id="Teu-tY-NQf"/>
+                            <constraint firstItem="JJB-oL-9Nu" firstAttribute="centerX" secondItem="ela-1A-IUh" secondAttribute="centerX" id="gSx-6z-F5l"/>
+                            <constraint firstItem="JJB-oL-9Nu" firstAttribute="centerX" secondItem="S8Y-Q3-40C" secondAttribute="centerX" id="iAe-gV-T45"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.91184580329999998" green="0.70496505499999995" blue="0.45092719790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.89200109240000003" green="0.50751137729999996" blue="0.058529011909999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Vny-3x-jl7" appends="YES" id="hoC-49-FOr"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="phoneNumberField" destination="Ekm-JD-VdS" id="dkg-0U-IzA"/>
+                        <outlet property="usernameTextField" destination="n5c-zq-uCt" id="rj3-o5-O5M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JDP-Eu-ZTj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Vny-3x-jl7">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="w97-lj-tAm" id="uYy-Hj-rgo"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4462.3188405797109" y="91.741071428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="O5Y-9K-etk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="v2u-qP-zhG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SRN-DZ-yGD">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2UL-hj-Wrh" kind="relationship" relationship="rootViewController" id="SBQ-IK-mgr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f2i-ET-deK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2657.971014492754" y="92.410714285714278"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="S8Y-Q3-40C">
+            <size key="intrinsicContentSize" width="43" height="36.5"/>
+        </designable>
+        <designable name="d8i-Lt-vcD">
+            <size key="intrinsicContentSize" width="148" height="36.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Splits logo" width="98" height="55"/>
+    </resources>
+</document>
